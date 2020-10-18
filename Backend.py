@@ -48,7 +48,7 @@ def showTheResult():
     temp.append(request.form['industry'])
     temp.append(request.form['function'])
     lr_data = pd.DataFrame([temp],columns=data.columns.values)
-    
+
     if len(bert_text)==0:
         job_last = 1
     elif len(bert_text)<= 20:
@@ -66,7 +66,7 @@ def showTheResult():
     else:
         result_text = 'Fraudulent'
 
-    return render_template('result.html',result = result_text ) 
+    return render_template('result.html',result = result_text, isFraudulent = job_last ) 
 
 
 app.run(debug=False)

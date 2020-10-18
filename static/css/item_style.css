@@ -4,32 +4,32 @@
 }
 
 .main_text
-{ 
+{
    position: absolute;
    top: 35%;
    width: 100%;
-   text-align:center;	
+   text-align:center;
    animation: text_animation 1s;
 }
 
 .huge_text
 {
-   color: white; 
-   font-size: 100px; 
+   color: white;
+   font-size: 100px;
    margin: 0px;
 }
 
 .small_text
 {
-   color: white; 
-   font-size: 45px; 
+   color: white;
+   font-size: 45px;
    margin: 0px;
 }
 
 .button_text
 {
-   color: white; 
-   font-size: 20px; 
+   color: white;
+   font-size: 20px;
    margin: 0px;
 }
 
@@ -175,4 +175,11 @@
    opacity: 0.85;
    font-size: 24px;
    color: white;
+}
+
+.tips
+{
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  margin-left: 2%;
 }

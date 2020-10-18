@@ -10,21 +10,41 @@
 		<script src="../static/js/StartSketch.js"></script>
 		<script src="../static/js/Tool.js"></script>
 	</head>
-		
+
 	<body class="background">
 		<div class="main_text">
 			<div>
 				<p class="small_text" >
-					THE RESULT OF CLASSIFICATION IS
+					SYSTEM PREDICTS THIS JOB AD IS:
 				</p>
+
 				<p class="huge_text">
 					{{result}}
 				</p>
+        <br>
+        {% if isFraudulent %}
+        <p class="small_text">
+          How to avoid job scams, here are some references:
+        </p>
+
+
+        <a class="tips" href="https://www.flexjobs.com/blog/post/how-to-find-a-real-online-job-and-avoid-the-scams-v2/">How to Avoid Work-from-Home Job Scams: 6 Tips</a>
+        <br>
+
+        <a class="tips" href="https://www.forbes.com/sites/ashleystahl/2020/05/11/job-hunting-scams-amid-covid-19-pandemic/#75b923db3c57">Job Hunting Scams Amid COVID-19 Pandemic</a>
+        <br>
+
+        <a class="tips" href="https://www.thebalancecareers.com/top-job-scam-warning-signs-2062181">Top 10 Job Scam Warning Signs</a>
+        <br>
+
+        <a class="tips" href="https://us.norton.com/internetsecurity-online-scams-avoid-job-scams.html">Don't fall for online employment and job scams</a>
+        <br>
+        {% endif %}
 			</div>
 
 			<div style="margin-top: 9.5%;" onclick="jumpToOtherWeb('http://127.0.0.1:5000/')">
 				<p class="button_text">
-					BACK 
+					BACK
 				</p>
 				<img src="../static/image/Arrow.png"  width="90px" height="40px"/>
 			</div>
