@@ -1,0 +1,178 @@
+.background
+{
+   background-color: rgb(25, 25, 25);
+}
+
+.main_text
+{ 
+   position: absolute;
+   top: 35%;
+   width: 100%;
+   text-align:center;	
+   animation: text_animation 1s;
+}
+
+.huge_text
+{
+   color: white; 
+   font-size: 100px; 
+   margin: 0px;
+}
+
+.small_text
+{
+   color: white; 
+   font-size: 45px; 
+   margin: 0px;
+}
+
+.button_text
+{
+   color: white; 
+   font-size: 20px; 
+   margin: 0px;
+}
+
+.form_background{
+   background:rgb(240, 240, 240);
+   width: 1400px;
+   height: 673px;
+   position: absolute;
+   left: 50%;
+   margin-left: -700px;
+   bottom: 0;
+}
+
+.title_container
+{
+   width: 100%;
+   text-align: center;
+}
+
+.title
+{
+   font-size: 40px;
+   font-weight:400;
+   color: rgb(35, 35, 35);
+   margin-bottom: 2%;
+   margin-left: -0.5%;
+}
+
+.title_line
+{
+   width: 320px;
+   height: 3px;
+   background-color: sandybrown;
+   position: absolute;
+   left: 50%;
+   margin-left: -180px;
+}
+
+.left_side_form
+{
+   float: left;
+   margin-top: 7%;
+   margin-left: 7%;
+}
+
+.input_container
+{
+   display:inline-block;
+}
+
+.short_input_content
+{
+   width: 200px;
+   height: 30px;
+   padding-left: 8px;
+   padding-right: 8px;
+   border:2px solid rgb(180, 180, 180);
+   border-radius:5px;
+}
+
+.long_input_content
+{
+   width: 480px;
+   height: 35px;
+   padding-left: 8px;
+   padding-right: 8px;
+   border:2px solid rgb(180, 180, 180);
+   border-radius:5px;
+}
+
+.huge_textarea
+{
+   width: 480px;
+   height: 90px;
+   padding-left: 8px;
+   padding-right: 8px;
+   border:2px solid rgb(180, 180, 180);
+   border-radius:5px;
+}
+
+.newline
+{
+   margin: 0;
+}
+
+.example_text
+{
+   font-size: 12px;
+   color: rgb(150, 150, 150);
+   margin-left: 2%;
+}
+
+.inline_segmenter
+{
+   display:inline-block;
+   margin-left: 70px;
+}
+
+.newline_segmentor
+{
+   margin-top: 30px;
+}
+
+.right_side_form
+{
+   float: right;
+   margin-top: 5.7%;
+   margin-right: 3%;
+}
+
+.answer_input
+{
+   margin-top: 10px;
+   margin-left: 30px;
+}
+
+.question_newline
+{
+   margin-top: 18px;
+}
+
+.small_textarea
+{
+   width: 280px;
+   height: 70px;
+   padding-left: 8px;
+   padding-right: 8px;
+   border:2px solid rgb(180, 180, 180);
+   border-radius:5px;
+}
+
+.inline_segmenter_textarea
+{
+   display:inline-block;
+   margin-left: 20px;
+}
+
+.submit_button
+{
+   background-color: sandybrown;
+   width: 590px;
+   height: 50px;
+   opacity: 0.85;
+   font-size: 24px;
+   color: white;
+}

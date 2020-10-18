@@ -1,0 +1,160 @@
+<html>
+
+      <head>
+      <meta charset = "UTF-8">
+      <title>Job Fraudulent Classifier System</title>
+      <link href="../static/css/item_style.css" type="text/css" rel="stylesheet" />
+    </head>
+
+    <body class="background">
+
+        <div class="form_background">
+
+            <div class="title_container">
+                <p class="title">JOB INFORMATION FORM</p>
+                <div class="title_line"></div>
+            </div>
+
+            <form action="http://localhost:5000/result" method="post">
+
+                <div class="left_side_form">
+
+                    <div>
+                        <div class="input_container">
+                            <input class="short_input_content" type = "text" name = "title" placeholder = "Title/Position"/>
+                            <p class="newline"></p>
+                            <div class="example_text">e.g. Sales Associate</div>
+                        </div>
+
+                        <div class="inline_segmenter"></div>
+
+                        <div class="input_container">
+                            <input class="short_input_content" type = "text" name = "department" placeholder = "Department"/>
+                            <p class="newline"></p>
+                            <div class="example_text">e.g. Marketing</div>
+                        </div>
+                    </div>
+
+                    <div class="newline_segmentor"></div>
+
+                    <div>
+                        <div class="input_container">
+                            <input class="short_input_content" type = "text" name = "employment_type" placeholder = "Employment Type"/>
+                            <p class="newline"></p>
+                            <div class="example_text">e.g. Full-time or Part-time</div>
+                        </div>
+
+                        <div class="inline_segmenter"></div>
+
+                        <div class="input_container">
+                            <input class="short_input_content" type = "text" name = "required_experience" placeholder = "Required Experience"/>
+                            <p class="newline"></p>
+                            <div class="example_text">e.g. like Internship, Entry level</div>
+                        </div>
+                    </div>
+
+                    <div class="newline_segmentor"></div>
+
+                    <div>
+                        <div class="input_container">
+                            <input class="short_input_content" type = "text" name = "required_education" placeholder = "Required Education"/>
+                            <p class="newline"></p>
+                            <div class="example_text">e.g. Bachelor's Degree</div>
+                        </div>
+
+                        <div class="inline_segmenter"></div>
+
+                        <div class="input_container">
+                            <input class="short_input_content" type = "text" name = "function" placeholder = "Function of Position"/>
+                            <p class="newline"></p>
+                            <div class="example_text">e.g. Health Care Provider</div>
+                        </div>
+                    </div>
+
+                    <div class="newline_segmentor"></div>
+
+                    <div>
+                        <div class="input_container">
+                            <input class="long_input_content" type = "text" name = "industry" placeholder = "Industry"/>
+                            <p class="newline"></p>
+                            <div class="example_text">e.g. Computer Software</div>
+                        </div>
+                    </div>
+
+                    <div class="newline_segmentor"></div>
+
+                    <div>
+                        <div class="input_container">
+                            <textarea class="huge_textarea" name = "company_profile" placeholder = "Company Profile"></textarea>
+                            <p class="newline"></p>
+                            <div class="example_text">e.g. A brief company introdution</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="right_side_form">
+
+                    <div class="question_set">
+                        <span class="question">Does the company ask you to telecommute?</span>
+                        <input class="answer_input" type = "radio" name = "telecommuting" value = "1" /><span class="answer">Yes</span>
+                        <input class="answer_input" type = "radio" name = "telecommuting" value = "0" checked/><span class="answer">NO</span>
+                    </div>
+
+                    <div class="question_newline"></div>
+
+                    <div class="question_set">
+                        <span class="question">Does the company has any quetions for you?</span>
+                        <input class="answer_input" style="margin-left: 26.5px;" type = "radio" name = "has_questions" value = "1" /><span class="answer">Yes</span>
+                        <input class="answer_input" type = "radio" name = "has_questions" value = "0" checked/><span class="answer">NO</span>
+                    </div>
+                    
+                    <div class="question_newline"></div>
+
+                    <div class="question_set">
+                        <span class="question">Does the company has any logos?</span>
+                        <input class="answer_input" style="margin-left: 112px;" type = "radio" name = "has_company_logo" value = "1" checked/><span class="answer">Yes</span>
+                        <input class="answer_input" type = "radio" name = "has_company_logo" value = "0" checked/><span class="answer">NO</span>
+                    </div>
+                    
+                    <div class="newline_segmentor"></div>
+
+                    <div>
+                        <div class="input_container">
+                            <textarea class="small_textarea" name = "requirements" placeholder = "Requirements"></textarea>
+                            <p class="newline"></p>
+                            <div class="example_text">e.g. The skills company needs you to have</div>
+                        </div>
+
+                        <div class="inline_segmenter_textarea"></div>
+
+                        <div class="input_container">
+                            <textarea class="small_textarea" name = "benefits" placeholder = "Benefits"></textarea>
+                            <p class="newline"></p>
+                            <div class="example_text">e.g. What you can benefit from the company</div>
+                        </div>
+                    </div>
+
+                    <div class="newline_segmentor"></div>
+
+                    <div>
+                        <div class="input_container">
+                            <textarea class="huge_textarea" style = "width:590px" name = "description" placeholder = "Description"></textarea>
+                            <p class="newline"></p>
+                            <div class="example_text">e.g. The description of the company</div>
+                        </div>
+                    </div>
+
+                    <div class="newline_segmentor"></div>
+
+                    <input class="submit_button" type = "submit" value = "SUBMIT">
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </body>
+
+</html>
