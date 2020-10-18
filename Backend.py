@@ -51,7 +51,7 @@ def showTheResult():
 
     if len(bert_text)==0:
         job_last = 1
-    elif len(bert_text)<= 20:
+    elif len(bert_text)<= 50:
         job_last = 1
     elif fliter(bert_data):
         possi_lr = lr(lr_data)
@@ -66,7 +66,7 @@ def showTheResult():
     else:
         result_text = 'Fraudulent'
 
-    return render_template('result.html',result = result_text, isFraudulent = job_last ) 
+    return render_template('result.html',result = result_text, isFraudulent = job_last )
 
 
 app.run(debug=False)
