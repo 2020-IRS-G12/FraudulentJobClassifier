@@ -4,6 +4,27 @@
       <meta charset = "UTF-8">
       <title>Job Fraudulent Classifier System</title>
       <link href="../static/css/item_style.css" type="text/css" rel="stylesheet" />
+      <link href="../static/css/nprogress.css" type="text/css" rel="stylesheet" />
+      <script src="../static/js/nprogress.js"></script>
+      <script src="../static/js/jquery-1.11.1.min.js"></script>
+      <script>
+      function incProgressBar(n){
+        if(n < 5){
+          NProgress.inc(0.1);
+        }
+        else {
+          NProgress.inc();
+        }
+        setInterval(function(){incProgressBar(n+1)},2500);
+      }
+
+      function ShowProgressBar(){
+        $("form").hide();
+        $("#formTitle").text("Processing Data, Please Wait!");
+        NProgress.start();
+        incProgressBar(0);
+      }
+      </script>
     </head>
 
     <body class="background">
@@ -11,7 +32,7 @@
         <div class="form_background">
 
             <div class="title_container">
-                <p class="title">JOB INFORMATION FORM</p>
+                <p id="formTitle" class="title">JOB INFORMATION FORM</p>
                 <div class="title_line"></div>
             </div>
 
@@ -108,7 +129,7 @@
                         <input class="answer_input" style="margin-left: 26.5px;" type = "radio" name = "has_questions" value = "1" /><span class="answer">Yes</span>
                         <input class="answer_input" type = "radio" name = "has_questions" value = "0" checked/><span class="answer">NO</span>
                     </div>
-                    
+
                     <div class="question_newline"></div>
 
                     <div class="question_set">
@@ -116,7 +137,7 @@
                         <input class="answer_input" style="margin-left: 112px;" type = "radio" name = "has_company_logo" value = "1" checked/><span class="answer">Yes</span>
                         <input class="answer_input" type = "radio" name = "has_company_logo" value = "0" checked/><span class="answer">NO</span>
                     </div>
-                    
+
                     <div class="newline_segmentor"></div>
 
                     <div>
@@ -147,7 +168,7 @@
 
                     <div class="newline_segmentor"></div>
 
-                    <input class="submit_button" type = "submit" value = "SUBMIT">
+                    <input class="submit_button" type = "submit" value = "SUBMIT" onclick = "ShowProgressBar()">
 
                 </div>
 
