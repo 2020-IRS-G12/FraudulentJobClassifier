@@ -49,15 +49,19 @@ def showTheResult():
     temp.append(request.form['function'])
     lr_data = pd.DataFrame([temp],columns=data.columns.values)
 
+    word_list = []
     if len(bert_text)==0:
+        pjob = [0,1]
         job_last = 1
     elif len(bert_text)<= 50:
+        pjob = [0,1]
         job_last = 1
     elif fliter(bert_data):
         possi_lr = lr(lr_data)
-        possi_b = be(bert_data)
-        job_last = ga_job(possi_lr,possi_b)
+        possi_b,word_list = be(bert_data)
+        pjob,job_last = ga_job(possi_lr,possi_b)
     else:
+        pjob = [0,1]
         job_last = 1
 
     result_text = ''
@@ -66,7 +70,7 @@ def showTheResult():
     else:
         result_text = 'Fraudulent'
 
-    return render_template('result.html',result = result_text, isFraudulent = job_last )
+    return render_template('result.html',result = result_text, isFraudulent = job_last)
 
 
 app.run(debug=False)
