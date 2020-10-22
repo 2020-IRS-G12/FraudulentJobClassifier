@@ -4,7 +4,7 @@ import pandas as pd
 import os
 import matplotlib.pyplot as plt
 import seaborn as sns
-import re 
+import re
 from sklearn.feature_extraction.text import TfidfVectorizer
 from nltk.stem.porter import PorterStemmer
 from nltk.corpus import stopwords
@@ -186,11 +186,11 @@ def lr(data):
         else:
             data.loc[0,i] = 0
     # print(data)
-    
+
     ## Defining the utility functions
 
 
-    
+
     data['text']=data['text'].map(remove_URL)
     data['text']=data['text'].map(remove_emoji)
     data['text']=data['text'].map(remove_html)
@@ -210,7 +210,7 @@ def lr(data):
 
     '''
     Below is a uliity function that takes sentenes as a input and return the vector representation of the same
-    Method adopted is similar to average word2vec. Where i am summing up all the vector representation of the words from the glove and 
+    Method adopted is similar to average word2vec. Where i am summing up all the vector representation of the words from the glove and
     then taking the average by dividing with the number of words involved
     '''
 
@@ -246,7 +246,7 @@ def lr(data):
     pkl_filename = "pickle_lr_model.pkl"
     with open(pkl_filename, 'rb') as file:
         pickle_model = pickle.load(file)
-        
+
 
     y_predict = pickle_model.predict_proba(main_data)
     #np.savetxt("proba_lr.txt",y_predict)
@@ -254,11 +254,11 @@ def lr(data):
     possi_lr=possi_lr.tolist()
     possi_lr = possi_lr[0]
     return possi_lr
-    
+
 
 def be(df):
      #===========================bert======================================#
-    #=======================bert==========data================================#   
+    #=======================bert==========data================================#
     # df['text'] = df['title'] + " " + df['department'] + \
     #             " " + df['company_profile'] + " " + \
     #             df['description'] + " " + \
@@ -306,7 +306,7 @@ def be(df):
 
     df = df.values.tolist()
     df = df[0]
-    result, model_outputs = model.predict(df)
+    result, model_outputs, atten_score = model.predict(df)
 
     import numpy as np
     preds = [np.argmax(tuple(m)) for m in model_outputs]
@@ -328,7 +328,7 @@ def be(df):
     return possi_b
 
 def ga_job(possi_lr,possi_b):
-    #====================================ga=ensembel============================# 
+    #====================================ga=ensembel============================#
     #====Best solution :  [[[1.17620871 1.18895564 0.62855357 1.2274774 ]]]=====#
     gene = [1.17620871, 1.18895564, 0.62855357, 1.2274774 ]
     possi = np.append(possi_b,possi_lr)
@@ -356,4 +356,4 @@ def ga_job(possi_lr,possi_b):
 
     job_last = np.argmax(pjob)
 
-    return(job_last) 
+    return(job_last)
