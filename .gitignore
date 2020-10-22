@@ -131,3 +131,4 @@ dmypy.json
 
 glove_dict.npy
 bert/pytorch_model.bin
+bert_2/pytorch_model.bin
