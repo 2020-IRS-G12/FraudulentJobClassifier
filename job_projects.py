@@ -15,6 +15,8 @@ from sklearn.model_selection import cross_val_score
 from imblearn.combine import SMOTETomek
 import string
 from sklearn.model_selection import RandomizedSearchCV
+from transformers import AutoTokenizer, AutoModel
+import heapq
 
 
 os.chdir(os.path.dirname(__file__))
@@ -136,6 +138,33 @@ def softmax(x):
     e_x = np.exp(x - np.max(x))
     e_y = e_x / e_x.sum()
     return e_y
+
+def return_highlight_word(atten_score,dic_for_bert,inputs):
+    atten_sum = [0 for i in range(512)]
+    for indexi in range(12):
+        atten_sum=list(map(lambda x :x[0]+x[1] ,zip(atten_sum,atten_score[0][0][indexi][:][0])))
+    atten_sum = atten_sum[1:]
+    max_number = heapq.nlargest(50, atten_sum) 
+    max_index = []
+    for t in max_number:
+        index = atten_sum.index(t)
+        max_index.append(index)
+        atten_sum[index] = 0
+    tokenizer = AutoTokenizer.from_pretrained("bert-base-uncased")
+    txt = inputs[0]
+    input_id = tokenizer(txt)['input_ids'][1:]
+    string_list = []
+    sentence_list = []
+    for i in input_id:
+        sentence_list.append(dic_for_bert[i])
+    for m in max_index:
+        sentence_list[m] = sentence_list[m]+'**'
+    sentence = ' '.join(sentence_list).strip().replace(' ##','')
+    sp_word = sentence.split()
+    for k in sp_word:
+        if '**' in k:
+            string_list.append(k.replace('**',''))
+    return string_list
 
 ##=======================================
 
@@ -302,11 +331,21 @@ def be(df):
 
 
     from simpletransformers.classification import ClassificationModel
-    model = ClassificationModel('bert', './bert/', num_labels=2, args={'fp16': False,'overwrite_output_dir': True,'output_dir':'bert_classifier_model',"train_batch_size": 64, "save_steps": 10000, "save_model_every_epoch":False,'num_train_epochs': 1}, use_cuda=False)
-
+    model = ClassificationModel('bert', './bert_2/', num_labels=2, args={'fp16': False,'overwrite_output_dir': True,'output_dir':'bert_classifier_model',"train_batch_size": 64, "save_steps": 10000, "save_model_every_epoch":False,'num_train_epochs': 1}, use_cuda=False)
+    # model = ClassificationModel('bert', './bert_2', num_labels=2, args={'fp16': False,'overwrite_output_dir': True,'output_dir':'bert_classifier_model',"train_batch_size": 64, "save_steps": 10000, "save_model_every_epoch":True,
     df = df.values.tolist()
     df = df[0]
-    result, model_outputs = model.predict(df)
+    result, model_outputs,atten_score = model.predict(df)    
+    
+    # get attention word list 
+
+    vocab = open('./bert_2/vocab.txt','r',encoding='utf-8').readlines()
+    dic_for_bert = {}
+    for inx,word in enumerate(vocab):
+        dic_for_bert[inx]=word.strip()
+    word_list = return_highlight_word(atten_score,dic_for_bert,df)
+
+
 
     import numpy as np
     preds = [np.argmax(tuple(m)) for m in model_outputs]
@@ -325,7 +364,7 @@ def be(df):
     # print(possi_b)
     #possi_b.reverse()
     # print(possi_b)
-    return possi_b
+    return possi_b,word_list
 
 def ga_job(possi_lr,possi_b):
     #====================================ga=ensembel============================# 
@@ -351,9 +390,12 @@ def ga_job(possi_lr,possi_b):
 
     l_p = product[0]+product[2]
     r_p = product[1]+product[-1]
+    l_pp = l_p / (l_p+r_p)
+    r_pp = r_p / (l_p+r_p)
     pjob = np.append(l_p,r_p)
+    pjob_p = np.append(l_pp,r_pp)
     # print(pjob)
 
     job_last = np.argmax(pjob)
 
-    return(job_last) 
+    return pjob_p,job_last 
