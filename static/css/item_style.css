@@ -195,3 +195,55 @@
    font-size: 16px;
    color: white;
 }
+
+.error_report
+{
+   position: absolute;
+   text-align:center;
+   top:5%;
+   left:82%
+}
+
+.normal_alarm_text
+{
+   color:black;
+   margin-top: 5px;
+   word-break:normal; 
+   display:block; 
+   white-space:pre-wrap;
+   word-wrap : break-word ;
+   overflow: hidden ;
+}
+
+.middle_alarm_text
+{
+   color:darkblue;
+   margin-top: 5px;
+   word-break:normal; 
+   display:block; 
+   white-space:pre-wrap;
+   word-wrap : break-word ;
+   overflow: hidden ;
+}
+
+.high_alarm_text
+{
+   color:darkred;
+   margin-top: 5px;
+   word-break:normal; 
+   display:block; 
+   white-space:pre-wrap;
+   word-wrap : break-word ;
+   overflow: hidden ;
+}
+
+.report_container{
+   background:rgb(250, 250, 250);
+   width: 1200px;
+   height: 500px;
+   position: absolute;
+   left: 50%;
+   margin-left: -600px;
+   bottom: 0;
+   overflow-y:scroll;
+}
