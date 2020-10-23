@@ -49,12 +49,10 @@ def highlightSentence(title,text,word_list):
     html_text='<div> <div style=\'margin-left: 5px; margin-top: 10px;\'>'+title+':</div><div style=\'margin-left: 50px; margin-right: 10px;\'>'
     for i in range(0,len(scores)):
         class_txt = ''
-        if scores[i]<4:
-            class_txt = 'normal_alarm_text'
-        if scores[i]>=4 and scores[i]<8:
-            class_txt = 'middle_alarm_text'
+        if scores[i]<8:
+            class_txt = 'normal_text'
         if scores[i]>=8:
-            class_txt = 'high_alarm_text'
+            class_txt = 'suspicious_text'
         
         html_text = html_text+'<span class=\''+class_txt+'\'>'+sentences[i]+'</span>'
 

@@ -15,7 +15,7 @@
 
 		{% if isFraudulent %}
 		<div class="error_report" onclick='jumpToOtherWeb("{{url_for('showTheReport')}}")'>
-			<p style='color:darkred; font-size: 40px; margin: 0px;' >
+			<p style='color:#ff5252; font-size: 40px; margin: 0px; cursor:pointer;text-decoration:underline'>
 			     Scam Job Report
 			</p>
 		</div>
@@ -27,8 +27,8 @@
 					SYSTEM PREDICTS THIS JOB AD IS:
 				</p>
 
-				<p class="huge_text">
-					{{result}}
+				<p>
+					<span class="huge_text">{{result}}</span> <span class="possibility_text">{{possibility}}</span>
 				</p>
 				<br>
 				{% if isFraudulent %}

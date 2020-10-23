@@ -26,11 +26,20 @@
    margin: 0px;
 }
 
+.possibility_text
+{
+   color: white;
+   font-size: 25px;
+   margin: 0px;
+   margin-left: 20px;
+}
+
 .button_text
 {
    color: white;
    font-size: 20px;
    margin: 0px;
+   cursor:pointer;
 }
 
 .form_background{
@@ -204,7 +213,7 @@
    left:82%
 }
 
-.normal_alarm_text
+.normal_text
 {
    color:black;
    margin-top: 5px;
@@ -215,18 +224,7 @@
    overflow: hidden ;
 }
 
-.middle_alarm_text
-{
-   color:darkblue;
-   margin-top: 5px;
-   word-break:normal;
-   font-family:"Courier";
-   white-space:pre-wrap;
-   word-wrap : break-word ;
-   overflow: hidden ;
-}
-
-.high_alarm_text
+.suspicious_text
 {
    color:darkred;
    margin-top: 5px;
@@ -240,10 +238,25 @@
 .report_container{
    background:rgb(250, 250, 250);
    width: 1200px;
-   height: 500px;
+   height: 470px;
    position: absolute;
    left: 50%;
    margin-left: -600px;
-   bottom: 0;
+   bottom: 50px;
    overflow-y:scroll;
+}
+
+.report_back_button
+{
+   background:sandybrown;
+   color:white;
+   text-align:center;
+   position: absolute;
+   width: 120px;
+   height:30px;
+   left: 50%;
+   margin-left: -60px;
+   bottom: 5px;
+   padding-top: 7px;
+   cursor:pointer;
 }

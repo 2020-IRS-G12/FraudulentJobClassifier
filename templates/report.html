@@ -3,7 +3,9 @@
 		<meta charset = "UTF-8">
 		<title>Job Fraudulent Classifier System</title>
 		<link href="../static/css/item_style.css" type="text/css" rel="stylesheet" />
-		<link href="../static/css/animation.css" type="text/css" rel="stylesheet" />
+        <link href="../static/css/animation.css" type="text/css" rel="stylesheet" />
+        
+        <script src="../static/js/Tool.js"></script>
 	</head>
 
 	<body class='background'>
@@ -15,16 +17,15 @@
             </div>
 
             <div class='report_container'>
-                <span class='normal_alarm_text'>Legend:</span><br>
-                <span class='normal_alarm_text'>black:          normal</span>
+                <span class='normal_text'>Legend:</span><br>
+                <span class='normal_text'>black:          normal</span>
                 <br>
-                <span class='middle_alarm_text'>blue:       suspicious</span>
-                <br>
-                <span class='high_alarm_text'  >red: highly suspicious</span>
+                <span class='suspicious_text'>red:        suspicious</span>
                 <br><br>
                 {{html_text|safe}}
             </div>
 
+            <div class='report_back_button' onclick='jumpToOtherWeb("{{url_for('start')}}")'> Back To Start </div>
         </div>
 
 	</body>
