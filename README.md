@@ -21,7 +21,7 @@ We began by dealing with the unbalanced dataset, and utilize ensemble learning t
 | :------------ |:---------------:| :-----| :-----|
 | Tao Xiyan | A0108517H |Overall system implementation and validation, project management and documentation | anirban.karchaudhuri@gmail.com |
 | Zhang Zekun | A0178453W |Overall system design, modelling, use case & algorithm design, system implementation | mvskrishna@yahoo.com |
-| Shi Zhaoheng | A0215413U |Webpage design, Web backend system design, system integration, documentation | manojniyogi@yahoo.com |
+| Shi Zhaoheng | A0215413U |Webpage design, Web backend system design, system integration, documentation | e0535503@u.nus.edu.com |
 
 ---
 
