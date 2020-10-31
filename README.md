@@ -21,7 +21,7 @@ We began by dealing with the unbalanced dataset, and utilize ensemble learning t
 | :------------ |:---------------:| :-----| :-----|
 | Tao Xiyan | A0215472J |Overall system implementation and design,algorithm design and documentation | e0535562@u.nus.edu |
 | Zhang Zekun | A0215485B |Overall system design, modelling, use case & algorithm design, system implementation | zhang_zekun@u.nus.edu |
-| Shi Zhaoheng  | A0215413U |Webpage design, Web backend system design, system integration, documentation | e0535503@u.nus.edu.com |
+| Shi Zhaoheng   | A0215413U |Webpage design, Web backend system design, system integration, documentation | e0535503@u.nus.edu.com |
 
 ---
 
