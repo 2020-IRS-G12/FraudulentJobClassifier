@@ -27,7 +27,7 @@ We began by dealing with the unbalanced dataset, and utilize ensemble learning t
 
 ## SECTION 4 : VIDEO OF SYSTEM MODELLING & USE CASE DEMO
 <div align="center">
-  <a href="https://onedrive.live.com/?authkey=%21AGDVYhEyA7PahL4&cid=16C7FE8BA834E5DC&id=16C7FE8BA834E5DC%21909&parId=16C7FE8BA834E5DC%21804&o=OneUp">
+  <a href="https://www.youtube.com/watch?v=15QMv9mnXxk&feature=youtu.be">
     <img src="https://onedrive.gimhoy.com/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBbXl4Tk9MYy1PU2FqSEJaNFlHMEJneHhnbWRW.jpg" alt="Project Introduction Video">
   </a>
 </div>
