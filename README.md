@@ -19,7 +19,7 @@ We began by dealing with the unbalanced dataset, and utilize ensemble learning t
 
 | Official Full Name  | Student ID (MTech Applicable)  | Work Items (Who Did What) | Email (Optional) |
 | :------------ |:---------------:| :-----| :-----|
-| Tao Xiyan | A0108517H |Overall system implementation and validation, project management and documentation | anirban.karchaudhuri@gmail.com |
+| Tao Xiyan | A0215472J |Overall system implementation and design,algorithm design and documentation | e0535562@u.nus.edu |
 | Zhang Zekun | A0178453W |Overall system design, modelling, use case & algorithm design, system implementation | mvskrishna@yahoo.com |
 | Shi Zhaoheng | A0215413U |Webpage design, Web backend system design, system integration, documentation | e0535503@u.nus.edu.com |
 
