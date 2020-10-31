@@ -5,7 +5,7 @@
 
 ## SECTION 2 : EXECUTIVE SUMMARY / PAPER ABSTRACT
 
-Since the COVID-19 global pandemic hit in December 2019, its outbreak has dramatically impacted the world on every level. In Singapore, people have experienced changes in the job market, job postings fell by around 15 percent year-on-year since April 2020, and hiring growth rates have declined since February 2020. Unemployment is expected to spike to 5 percent or more. 
+Since the COVID-19 global pandemic hit in December 2019, its outbreak has dramatically impacted the world on every level. In Singapore, people have experienced changes in the job market, job postings fell by around 15 percent year-on-year since April 2020, and hiring growth rates have declined since February 2020. Unemployment is expected to spike to 5 percent or more.
 
 Under this situation, more and more companies post their job positions online, remote-working also becomes mainstream. On the other hand, job scams are on the rise as well. According to an annual Flewjob survey, nearly 20% of job seekers have been victim of a job scam (up from 13% in 2016).
 
@@ -20,7 +20,7 @@ We began by dealing with the unbalanced dataset, and utilize ensemble learning t
 | Official Full Name  | Student ID (MTech Applicable)  | Work Items (Who Did What) | Email (Optional) |
 | :------------ |:---------------:| :-----| :-----|
 | Tao Xiyan | A0215472J |Overall system implementation and design,algorithm design and documentation | e0535562@u.nus.edu |
-| Zhang Zekun | A0178453W |Overall system design, modelling, use case & algorithm design, system implementation | mvskrishna@yahoo.com |
+| Zhang Zekun | A0215485B |Overall system design, modelling, use case & algorithm design, system implementation | zhang_zekun@u.nus.edu |
 | Shi Zhaoheng  | A0215413U |Webpage design, Web backend system design, system integration, documentation | e0535503@u.nus.edu.com |
 
 ---
@@ -45,4 +45,3 @@ We began by dealing with the unbalanced dataset, and utilize ensemble learning t
 `Refer to Project Report at Github Folder: ProjectReport` <a href="https://github.com/hedink/Test/blob/main/ProjectReport/Project%20Report.docx">click here</a>
 
 ---
-
