@@ -42,13 +42,7 @@ We began by dealing with the unbalanced dataset, and utilize ensemble learning t
 
 ## SECTION 6 : PROJECT REPORT / PAPER
 
-`Refer to Project Report at Github Folder: ProjectReport` <a href="ProjectReport/IS Graduate Cert Pattern Recognition Systems Project Report - Group 24 - TaoXiyan ZhangZekun ShiZhaoheng.pdf">click here</a>
-
----
-
-## SECTION 7 : MISCELLANEOUS
-
-`Refer to Github Folder: Miscellaneous` <a href="https://github.com/hedink/Test/blob/main/ProjectReport/Project%20Report.docx">click here</a>
+`Refer to Project Report at Github Folder: ProjectReport` <a href="https://github.com/hedink/Test/blob/main/ProjectReport/Project%20Report.docx">click here</a>
 
 ---
 
