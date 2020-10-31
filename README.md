@@ -36,7 +36,7 @@ We began by dealing with the unbalanced dataset, and utilize ensemble learning t
 
 ## SECTION 5 : USER GUIDE
 
-`Refer to appendix User Guide in project report at Github Folder: ProjectReport` <a href="https://github.com/hedink/Test/blob/main/ProjectReport/User%20Guide.docx">click here</a>
+`Refer to appendix User Guide in project report at Github Folder: ProjectReport` <a href="https://github.com/2020-IRS-G12/FraudulentJobClassifier/blob/main/ProjectReport/User%20Guide.pdf">click here</a>
 
 ---
 
