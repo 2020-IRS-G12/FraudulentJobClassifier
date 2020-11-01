@@ -1,6 +1,8 @@
 ## SECTION 1 : PROJECT TITLE
 ## Scam Job Alerter
-
+<div align="center">
+  <img src="https://zekunsgames.oss-us-west-1.aliyuncs.com/p2_title.gif" alt="Title Gif">
+</div>
 ---
 
 ## SECTION 2 : EXECUTIVE SUMMARY / PAPER ABSTRACT
@@ -28,7 +30,7 @@ We began by dealing with the unbalanced dataset, and utilize ensemble learning t
 ## SECTION 4 : VIDEO OF SYSTEM MODELLING & USE CASE DEMO
 <div align="center">
   <a href="https://youtu.be/L4LrV84YX4s">
-    <img src="https://onedrive.gimhoy.com/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBbXl4Tk9MYy1PU2FqSEJaNFlHMEJneHhnbWRW.jpg" alt="Project Introduction Video">
+    <img src="https://zekunsgames.oss-us-west-1.aliyuncs.com/p2_intro_img.png" alt="Project Introduction Video">
   </a>
 </div>
 
