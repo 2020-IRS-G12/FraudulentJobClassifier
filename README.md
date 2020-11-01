@@ -1,7 +1,7 @@
 ## SECTION 1 : PROJECT TITLE
 ## Scam Job Alerter
 <div align="center">
-  <img src="https://zekunsgames.oss-us-west-1.aliyuncs.com/p2_title.gif" alt="Title Gif">
+  <img src="https://zekunsgames.oss-us-west-1.aliyuncs.com/p2_title.gif" alt="Title_Gif">
 </div>
 ---
 
