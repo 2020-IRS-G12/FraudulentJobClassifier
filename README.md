@@ -48,7 +48,7 @@ We began by dealing with the unbalanced dataset, and utilize ensemble learning t
 
 ---
 
-## SECTION 7 : MISCELLANEOUS
+## SECTION 7 : DATA PREPROCESS AND MODEL TRAINING
 
 `Raw data preprocess and model training code are saved in another Github repository` <a href="https://github.com/2020-IRS-G12/job_fraudulent_classifier">click here</a>
 
