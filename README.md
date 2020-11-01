@@ -1,5 +1,5 @@
 ## SECTION 1 : PROJECT TITLE
-## Scam Job Alert
+## Scam Job Alerter
 
 ---
 
@@ -42,6 +42,12 @@ We began by dealing with the unbalanced dataset, and utilize ensemble learning t
 
 ## SECTION 6 : PROJECT REPORT / PAPER
 
-`Refer to Project Report at Github Folder: ProjectReport` <a href="https://github.com/hedink/Test/blob/main/ProjectReport/Project%20Report.docx">click here</a>
+`Refer to Project Report at Github Folder: ProjectReport` <a href="https://github.com/2020-IRS-G12/FraudulentJobClassifier/blob/main/ProjectReport/IS%20Graduate%20Cert%20Pattern%20Recognition%20Systems%20Project%20Report%20-%20Group%2024%20-%20TaoXiyan%20ZhangZekun%20ShiZhaoheng.pdf">click here</a>
+
+---
+
+## SECTION 7 : MISCELLANEOUS
+
+`Raw data preprocess and model training code are saved in another Github repository` <a href="https://github.com/2020-IRS-G12/job_fraudulent_classifier">click here</a>
 
 ---
